@@ -1,0 +1,167 @@
+﻿body {
+    background-image: url('../photos/ish/ish_bg.gif');
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.footerlinks:hover {
+    color: seagreen;
+}
+
+#footer {
+    background-color: #39faf7;
+}
+
+.buttonA {
+    background-color: seagreen;
+    border: none;
+    border-radius: 20px;
+    padding: 14px 40px;
+    font-size: 18px;
+    color: white;
+    margin-top: 30px;
+}
+
+.btn-log {
+    background-color: seagreen;
+}
+
+.title {
+    display: flex;
+    height: 88%;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.col_a {
+    flex-basis: 50%;
+}
+
+h1a {
+    color: #000000;
+    font-size: 30px;
+}
+
+h5a {
+    color: white;
+}
+
+p1 {
+    color: seagreen;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+p1a {
+    color: white;
+    font-size: 15px;
+    line-height: 15px;
+}
+.cardHome {
+    width: 200px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+    .cardHome:hover {
+        transform: translateY(-10px);
+    }
+
+.card1 {
+  
+    background-image: url('../photos/ish/ish_download1.jpg');
+}
+
+.card2 {
+    background-image: url('../photos/ish/ish_download2.jpg');
+}
+
+.card3 {
+    background-image: url('../photos/ish/ish_download3.jpg');
+}
+
+.card4 {
+    background-image: url('../photos/ish/ish_download4.jpg');
+}
+.card5 {
+    background-image: url('../photos/ish/ish_download4toy.jpg');
+}
+.card6 {
+    background-image: url('../photos/ish/ish_download5sta.jpg');
+}
+.card7 {
+    background-image: url('../photos/ish/ish_download6sale.png');
+}
+.blankstar {
+    background-image: url(images/s3.png);
+    width: 16px;
+    height: 16px;
+}
+
+.waitingstar {
+    background-image: url(images/s2.png);
+    width: 16px;
+    height: 16px;
+}
+
+.shiningstar {
+    background-image: url(images/s1.png);
+    width: 16px;
+    height: 16px;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+
+
+body {
+    background-color: #eee;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.height {
+    height: 50vh;
+}
+
+
+.search {
+    position: relative;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+}
+
+    .search input {
+        height: 60px;
+        text-indent: 25px;
+        border: 2px solid #d6d4d4;
+    }
+
+
+        .search input:focus {
+            box-shadow: none;
+            border: 2px solid blue;
+        }
+
+    .search .fa-search {
+        position: absolute;
+        top: 20px;
+        left: 16px;
+    }
+
+    .search button {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        height: 50px;
+        width: 110px;
+        background: blue;
+    }
