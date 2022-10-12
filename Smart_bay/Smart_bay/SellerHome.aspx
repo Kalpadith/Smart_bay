@@ -85,7 +85,7 @@
                                 <div class="col-md-12">
                                     <div class="col-md-12">
                                     <div class="form-group">
-                                        <center style="width: 481px"><a href="RequestItemSelect.aspx">
+                                        <center style="width: 481px"><a href="SellerHome.aspx">
                                             <input class="btn btn-success btn-lg buttonA shadow col-5" id="Button246" type="button" value="Home" style="width: 46%; margin-left: 0px; margin-bottom: 0;" />
                                         </a></center><br>
                                     </div>
@@ -104,7 +104,7 @@
                                 <div class="col-md-12">
                                     <div class="col-md-12">
                                     <div class="form-group">
-                                       <center> <a href="FarmerRequestItems.aspx">
+                                       <center> <a href="AddSellerItem.aspx">
                                             <input class="btn btn-success btn-lg buttonA shadow col-5" id="Button247" type="button" value="Add Item" style="width: 46%; margin-left: 16px; margin-bottom: 0;" />
                                         </a></center><br>
                                     </div>

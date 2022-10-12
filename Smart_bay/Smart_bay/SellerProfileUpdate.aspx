@@ -1,17 +1,17 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="SellerProfileView.aspx.cs" Inherits="E_Farming.SellerProfileView" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="SellerProfileUpdate.aspx.cs" Inherits="E_Farming.SellerProfileUpdate" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style type="text/css">
+        <style type="text/css">
         .auto-style1 {
             width: 110px;
         }
+
         .auto-style2 {
             margin-left: 0px;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <section>
+        <section>
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -60,8 +60,8 @@
                                 <div class="col-md-6">
                                     <label class="auto-style1"><b>Full Name :</b></label>
                                     <div class="form-group">
-                                        <asp:TextBox CssClass="form-control shadow" ID="TextBox224" runat="server"
-                                            placeholder="Full Name" ReadOnly="True" style="margin-left: 0px">
+                                        <asp:TextBox CssClass="form-control shadow" ID="TextBox24" runat="server"
+                                            placeholder="Full Name" required="true" Style="margin-left: 0px">
                                         </asp:TextBox>
                                     </div>
                                 </div>
@@ -69,8 +69,8 @@
                                 <div class="col-md-6">
                                     <label><b>Date of Birth :</b></label>
                                     <div class="form-group">
-                                        <asp:TextBox CssClass="form-control shadow" ID="TextBox225" runat="server"
-                                            TextMode="Date" ReadOnly="True" style="margin-left: 0px">
+                                        <asp:TextBox CssClass="form-control shadow" ID="TextBox25" runat="server"
+                                            TextMode="Date" ReadOnly="True" Style="margin-left: 0px">
                                         </asp:TextBox>
                                     </div>
                                 </div>
@@ -80,8 +80,8 @@
                                 <div class="col-md-6">
                                     <label><b>Contact Number :</b></label>
                                     <div class="form-group">
-                                        <asp:TextBox CssClass="form-control shadow" ID="TextBox226" runat="server"
-                                            placeholder="Mobile Number" ReadOnly="True" TextMode="Number" style="margin-left: 0px">
+                                        <asp:TextBox CssClass="form-control shadow" ID="TextBox26" runat="server"
+                                            placeholder="Mobile Number" required="true" TextMode="Number" Style="margin-left: 0px">
                                         </asp:TextBox>
                                     </div>
                                 </div>
@@ -89,8 +89,8 @@
                                 <div class="col-md-6">
                                     <label><b>E-mail Address :</b></label>
                                     <div class="form-group">
-                                        <asp:TextBox CssClass="form-control shadow" ID="TextBox227" runat="server"
-                                            placeholder="e-mail" ReadOnly="True" TextMode="Email" style="margin-left: 0px">
+                                        <asp:TextBox CssClass="form-control shadow" ID="TextBox27" runat="server"
+                                            placeholder="e-mail" required="true" TextMode="Email" Style="margin-left: 0px">
                                         </asp:TextBox>
                                     </div>
                                 </div>
@@ -100,8 +100,8 @@
                                 <div class="col-md-6">
                                     <label><b>NIC No :</b></label>
                                     <div class="form-group">
-                                        <asp:TextBox CssClass="form-control shadow" ID="TextBox228" runat="server"
-                                            placeholder="NIC Card Number" ReadOnly="True" style="margin-left: 0px">
+                                        <asp:TextBox CssClass="form-control shadow" ID="TextBox28" runat="server"
+                                            placeholder="NIC Card Number" ReadOnly="True" Style="margin-left: 0px">
                                         </asp:TextBox>
                                     </div>
                                 </div>
@@ -112,7 +112,7 @@
                                 <div class="col-md-4">
                                     <label><b>Province :</b></label>
                                     <div class="form-group">
-                                        <asp:DropDownList CssClass="form-control shadow" ID="DropDownList22" ReadOnly="True" runat="server" style="margin-left: 0px">
+                                        <asp:DropDownList CssClass="form-control shadow" ID="DropDownList2" runat="server" Style="margin-left: 0px">
                                             <asp:ListItem Text="-Select-" Value="-Select-"></asp:ListItem>
                                             <asp:ListItem Text="Southern Province" Value="Southern Province"></asp:ListItem>
                                             <asp:ListItem Text="Western Province" Value="Western Province"></asp:ListItem>
@@ -130,17 +130,17 @@
                                 <div class="col-md-4">
                                     <label><b>Country :</b></label>
                                     <div class="form-group">
-                                        <asp:TextBox CssClass="form-control shadow" ID="TextBox229" runat="server"
-                                            placeholder="City" ReadOnly="True" style="margin-left: 0px">
+                                        <asp:TextBox CssClass="form-control shadow" ID="TextBox29" runat="server"
+                                            placeholder="City" Style="margin-left: 0px">
                                         </asp:TextBox>
                                     </div>
                                 </div>
 
                                 <div class="col-md-4">
-                                    <label><b>Postal Code :</b></label>
+                                    <label><b>Account Number :</b></label>
                                     <div class="form-group">
-                                        <asp:TextBox CssClass="form-control shadow" ID="TextBox111" runat="server"
-                                            placeholder="Postal Code" TextMode="Number" ReadOnly="True" style="margin-left: 0px">
+                                        <asp:TextBox CssClass="form-control shadow" ID="TextBox30" runat="server"
+                                            placeholder="Account Number" TextMode="Number" Style="margin-left: 0px">
                                         </asp:TextBox>
                                     </div>
                                 </div>
@@ -150,8 +150,8 @@
                                 <div class="col-md-12">
                                     <label><b>Address :</b></label>
                                     <div class="form-group">
-                                        <asp:TextBox CssClass="form-control shadow" ID="TextBox231" runat="server"
-                                            placeholder="Address" TextMode="MultiLine" ReadOnly="True" style="margin-left: 0px">
+                                        <asp:TextBox CssClass="form-control shadow" ID="TextBox31" runat="server"
+                                            placeholder="Address" TextMode="MultiLine" Style="margin-left: 0px">
                                         </asp:TextBox>
                                     </div>
                                 </div>
@@ -163,48 +163,69 @@
                                 <div class="col-md-4">
                                     <label><b>Seller ID :</b></label>
                                     <div class="form-group">
-                                        <asp:TextBox CssClass="form-control shadow" ID="TextBox232" runat="server"
-                                            placeholder="Farmer ID" ReadOnly="True" style="margin-left: 0px">
+                                        <asp:TextBox CssClass="form-control shadow" ID="TextBox32" runat="server"
+                                            placeholder="Farmer ID" ReadOnly="True" Style="margin-left: 0px">
                                         </asp:TextBox>
                                     </div>
                                 </div>
 
                                 <div class="col-md-4">
-                                    <label><b>Account Number :</b></label>
+                                    <label><b>Postal Code :</b></label>
                                     <div class="form-group">
-                                        <asp:TextBox CssClass="form-control shadow" ID="TextBox230" runat="server"
-                                            placeholder="Account Number" ReadOnly="True" TextMode="Number" style="margin-left: 0px">
+                                        <asp:TextBox CssClass="form-control shadow" ID="TextBox311" runat="server"
+                                            placeholder="Postal Code" required="true" TextMode="Number" Style="margin-left: 0px">
                                         </asp:TextBox>
                                     </div>
                                 </div>
                             </div>
 
 
-                            <section>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col">
-                                            <a href="SellerProfileUpdate.aspx">
-                                                <input class="btn btn-success btn-lg buttonA shadow col-1.5" id="Button33" type="button" value="Update Profile" style="margin-right: 0; width: 214px; margin-left: 209px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        </div>
+                            <!--<div class="col-md-4">
+                                   <label><b>Old Password :</b></label>
+                                    <div class="form-group">
+                                        <asp:TextBox Class="form-control shadow" ID="TextBox33" TextMode="Password" runat="server"
+                                            placeholder="Current Password" ReadOnly="True" >
+                                        </asp:TextBox>
                                     </div>
+                                </div>-->
+
+                            <div class="col-md-4">
+                                <label><b>New Password :</b></label>
+                                <div class="form-group">
+                                    <asp:TextBox Class="form-control shadow" TextMode="Password" ID="TextBox34" runat="server"
+                                        placeholder="New Password" Width="157px"></asp:TextBox>
                                 </div>
-
-
-                            </section>
-
+                            </div>
                         </div>
 
                         <br>
-                        <a href="RequestItemSelect.aspx"><i><< Back to Home</i></a>
-
+                        <div class="row">
+                            <div class="col-5 mx-auto">
+                                <center>
+                                    <asp:Button class="btn btn-success btn-lg buttonA shadow col-1.5" ID="Button20" runat="server" Text="Update" OnClick="Button20_Click" Style="margin-right: 0; width: 214px; margin-left: 209px;" />
+                                
+                                </center>
+                            </div>
+                        </div>
+                        <br>
                     </div>
                 </div>
+
+                <br>
+                <a href="RequestItemSelect.aspx"><i><< Back to Home</i></a>
+
             </div>
+        </div>
+        
     </section>
     <br>
+
+    <!--<section><center>
+        <a href="ViewSuppliedItemTable.aspx">
+            <input class="btn btn-success btn-lg buttonA shadow col-5" ID="Button333" type="button" value="Seller Items"/>
+        </a></center>
+    </section>-->
     <br>
     <br>
     <br>
 </asp:Content>
-
