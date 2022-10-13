@@ -31,19 +31,21 @@ namespace Smart_bay
                     con.Open();
 
                 }
-                SqlCommand cmd = new SqlCommand("select * from Customer_Table_1 where customer_id='" + TextBox1.Text.Trim() + "' AND password='" + TextBox2.Text.Trim() + "'", con);
+                SqlCommand cmd = new SqlCommand("select * from user_reg_form where username='" + TextBox1.Text.Trim() + "' AND password='" + TextBox2.Text.Trim() + "'", con);
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.HasRows)
                 {
                     while (dr.Read())
                     {
                         Response.Write("<script>alert('Successful login');</script>");
-                        Session["username"] = dr.GetValue(2).ToString();
-                        Session["fullname"] = dr.GetValue(2).ToString() + dr.GetValue(3).ToString();
+                        Session["username"] = dr.GetValue(11).ToString();
+                        Session["fullname"] = dr.GetValue(2).ToString() + " "+ dr.GetValue(3).ToString();
                         Session["role"] = dr.GetValue(0).ToString();
                         //Session["status"] = dr.GetValue(10).ToString();
                     }
-                    Response.Redirect("SmartHome.aspx");
+                    if (Session["role"].Equals("Customer")) {
+                        Response.Redirect("ClientHome.aspx");
+                    }
                 }
                 else
                 {

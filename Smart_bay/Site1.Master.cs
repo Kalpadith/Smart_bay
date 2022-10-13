@@ -80,7 +80,7 @@ namespace Smart_bay
 
                     LinkButton4.Visible = false; // Delete member link button
 
-                    LinkButton6.Visible = true; // admin login link button
+                    LinkButton6.Visible = false; // admin login link button
                     LinkButton11.Visible = false; // author management link button
                     LinkButton12.Visible = false; // publisher management link button
                     LinkButton8.Visible = false; // book inventory link button
@@ -163,7 +163,7 @@ namespace Smart_bay
             Session["username"] = "";
             Session["fullname"] = "";
             Session["role"] = "";
-            Session["status"] = "";
+            //Session["status"] = "";
 
             LinkButton1.Visible = true; // user login link button
             LinkButton2.Visible = true; // sign up link button

@@ -72,6 +72,7 @@
     <Content Include="bootstrap\js\bootstrap.min.js" />
     <Content Include="bootstrap\js\jquery-3.3.1.slim.min.js" />
     <Content Include="bootstrap\js\popper.min.js" />
+    <Content Include="catagories.aspx" />
     <Content Include="ClientHome.aspx" />
     <Content Include="css\custom.css" />
     <Content Include="datatables\css\jquery.dataTables.min.css" />
@@ -109,14 +110,17 @@
     <Content Include="photos\250b5b6e80d7eace5126b5b8cf1418af.jpg" />
     <Content Include="photos\Addcart.png" />
     <Content Include="photos\atm.png" />
+    <Content Include="photos\back-arr.png" />
     <Content Include="photos\Background1.jpg" />
     <Content Include="photos\Background1a.jpg" />
+    <Content Include="photos\beau.png" />
     <Content Include="photos\beauty.png" />
     <Content Include="photos\bg1.jpg" />
     <Content Include="photos\cancel-icon-png-12.jpg" />
     <Content Include="photos\cardpay.jpg" />
     <Content Include="photos\client.png" />
     <Content Include="photos\clientHome.png" />
+    <Content Include="photos\clothing.PNG" />
     <Content Include="photos\clothings.png" />
     <Content Include="photos\comments.png" />
     <Content Include="photos\customer.png" />
@@ -129,6 +133,7 @@
     <Content Include="photos\dlt.jpg" />
     <Content Include="photos\download.png" />
     <Content Include="photos\Education_Edit_pencil_1-copy-6.jpg" />
+    <Content Include="photos\electronic.png" />
     <Content Include="photos\electronicDevices.png" />
     <Content Include="photos\ex.jpg" />
     <Content Include="photos\farmer.png" />
@@ -149,6 +154,7 @@
     <Content Include="photos\salary.png" />
     <Content Include="photos\salaryprofile.jpg" />
     <Content Include="photos\saved-icon-29.jpg" />
+    <Content Include="photos\shoes.png" />
     <Content Include="photos\shoses.png" />
     <Content Include="photos\signincategory.png" />
     <Content Include="photos\stock.jpg" />
@@ -174,6 +180,13 @@
     <Content Include="adminlogin.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="catagories.aspx.cs">
+      <DependentUpon>catagories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="catagories.aspx.designer.cs">
+      <DependentUpon>catagories.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ClientHome.aspx.cs">
       <DependentUpon>ClientHome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

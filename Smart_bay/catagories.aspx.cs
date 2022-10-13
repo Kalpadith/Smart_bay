@@ -7,16 +7,14 @@ using System.Web.UI.WebControls;
 
 namespace Smart_bay
 {
-	public partial class ClientHome : System.Web.UI.Page
-	{
-		protected void Page_Load(object sender, EventArgs e)
-		{
+    public partial class catagories : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
             try
             {
-                if (Session["role"].Equals("Customer"))
+                if (Session["role"].Equals("user"))
                 {
-
-
 
                     LinkButton3.Visible = true; // logout link button
                     LinkButton6.Visible = true;
@@ -29,6 +27,15 @@ namespace Smart_bay
 
                 }
 
+                else if (Session["role"].Equals("farmer"))
+
+                {
+                    LinkButton3.Visible = true; // logout link button
+                    LinkButton7.Visible = true; // hello user link button
+                    LinkButton7.Text = "Hello " + Session["farmer_id"].ToString();
+
+                }
+
             }
             catch (Exception ex)
             {
@@ -38,8 +45,12 @@ namespace Smart_bay
 
         protected void LinkButton7_Click(object sender, EventArgs e)
         {
-            Response.Redirect("customerProfile.aspx");
+            Response.Redirect("FarmHome.aspx");
         }
+        /*protected void LinkButton3_Click(object sender, EventArgs e)
+		{
+			Response.Redirect("FarmHome.aspx");
+		}*/
 
         protected void LinkButton3_Click(object sender, EventArgs e)
         {
@@ -52,7 +63,7 @@ namespace Smart_bay
 
             LinkButton3.Visible = false; // logout link button
             LinkButton7.Visible = false; // hello user link button
-            Response.Redirect("ClientHome.aspx");
+            Response.Redirect("FarmHome.aspx");
 
 
         }

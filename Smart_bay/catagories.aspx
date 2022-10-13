@@ -1,12 +1,16 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="ClientHome.aspx.cs" Inherits="Smart_bay.ClientHome" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="catagories.aspx.cs" Inherits="Smart_bay.catagories" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <!-- Navbar -->
+       <!-- Navbar -->
        <nav class="navbar navbar-expand-lg navbar1">
           <!-- Container wrapper -->
          <div class="container-fluid">
+           <!-- Toggle button -->
+              <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <i class="fas fa-bars"></i>
+              </button>
 
              <!-- Collapsible wrapper -->
                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -40,11 +44,15 @@
                             <asp:LinkButton class="nav-link nav-link1" ID="LinkButton7" runat="server" Onclick="LinkButton7_Click" >Hello user</asp:LinkButton>
 
                         </li>
-                          <li class="nav-item active">
+                       
+
+                          
+                       <li class="nav-item active">
                         <asp:LinkButton class="nav-link nav-link1" ID="LinkButton3" runat="server" OnClick="LinkButton3_Click" Visible="FALSE">Logout</asp:LinkButton>
                      </li>
                    
                     </ul>		      
+           
                     <!-- Icon -->
                         <a href="cart.aspx" class="nav-link1">
                         <i class="bi bi-cart4"></i>
@@ -63,54 +71,45 @@
            </div>
           </div>
          </nav>
-
-     <br /><br />
 		
-    <div class="row">
-      
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                 <img src="photos/clothings.png" class="d-block" />
-               </div>
-               <div class="carousel-item">
-                 <img src="photos/shoses.png" class="d-block " />
-               </div>
-               <div class="carousel-item">
-                 <img src="photos/beauty.png" class="d-block " />
-               </div>
-               <div class="carousel-item">
-                 <img src="photos/electronicDevices.png" class="d-block " />
-               </div>
-              </div>
-                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                   <span class="visually-hidden">Previous</span>
-                 </button>
-                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                   <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-          
-        </div>
-    
+    <br /><br />
+
+     <div class="row">
+       <div class="container2">
+          <img width="1500" height="500"  src="photos/clientHome.PNG " />
+       </div>
+      </div>
     <br /><br /><br /><br />
 
-    <div class="container4">
+  <div class="container3">
 
-  <div class="card feed">
-   <img src="photos/viewItem.PNG "/>
+    <div>
+        <h4>Shop Product Range</h4>
+    </div>  
+
+  <div class="card-group m-2">
+  <div class="card item1">
+   <img src="photos/clothing.PNG "/>
+    <div class="card-body">
+      <center><i class="bi bi-gift-fill"></i>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-gift-fill" viewBox="0 0 16 16">
+             <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zm6 4v7.5a1.5 1.5 0 0 1-1.5 1.5H9V7h6zM2.5 16A1.5 1.5 0 0 1 1 14.5V7h6v9H2.5z"/>
+          </svg>
+         <a href="Clothing.aspx" class="btn btn-info">Shop Clothing</a></center>
+    </div>
+  </div>
+    <div class="card feed">
+    <img src="photos/shoes.png "/>
     <div class="card-body">
       <center><i class="bi bi-handbag-fill"></i>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-handbag-fill" viewBox="0 0 16 16">
             <path d="M8 1a2 2 0 0 0-2 2v2H5V3a3 3 0 1 1 6 0v2h-1V3a2 2 0 0 0-2-2zM5 5H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11v1.5a.5.5 0 0 1-1 0V5H6v1.5a.5.5 0 0 1-1 0V5z"/>
           </svg>
-         <a href="catagories.aspx" class="btn btn-info">View Items</a></center>
+        <a href="#" class="btn btn-info">Shop Shoes & Bags</a></center>
     </div>
-  </div>
-  <div class="card feed">
-    <img src="photos/feed.PNG "/>
+   </div>
+    <div class="card feed">
+    <img src="photos/beau.png"/>
     <div class="card-body">
       <center><i class="bi bi-people-fill"></i>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
@@ -118,10 +117,29 @@
              <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
              <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
           </svg>
-        <a href="#" class="btn btn-info">Feedback</a></center>
+        <a href="#" class="btn btn-info">Shop Beauty & Personal Care</a></center>
+    </div>
+   </div>
+  <div class="card feed">
+    <img src="photos/electronic.PNG"/>
+    <div class="card-body">
+      <center><i class="bi bi-plug-fill"></i>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plug-fill" viewBox="0 0 16 16">
+             <path d="M6 0a.5.5 0 0 1 .5.5V3h3V.5a.5.5 0 0 1 1 0V3h1a.5.5 0 0 1 .5.5v3A3.5 3.5 0 0 1 8.5 10c-.002.434-.01.845-.04 1.22-.041.514-.126 1.003-.317 1.424a2.083 2.083 0 0 1-.97 1.028C6.725 13.9 6.169 14 5.5 14c-.998 0-1.61.33-1.974.718A1.922 1.922 0 0 0 3 16H2c0-.616.232-1.367.797-1.968C3.374 13.42 4.261 13 5.5 13c.581 0 .962-.088 1.218-.219.241-.123.4-.3.514-.55.121-.266.193-.621.23-1.09.027-.34.035-.718.037-1.141A3.5 3.5 0 0 1 4 6.5v-3a.5.5 0 0 1 .5-.5h1V.5A.5.5 0 0 1 6 0z"/>
+          </svg>
+        <a href="#" class="btn btn-info">Shop Electronic Accessories</a></center>
     </div>
    </div>
   </div>
+
+ </div>
+    <br />
+
+     <div class="row">
+        <div class="col-md-6">
+           <a href="ClientHome.aspx" class="links"><img width="30" class="imgs" src="photos/back-arr.png "/>Back to Home</a>
+        </div>
+     </div>  
 
     <br /><br />
 
