@@ -10,15 +10,15 @@ using System.Web.UI.WebControls;
 
 namespace E_Farming
 {
-    public partial class WebForm3 : System.Web.UI.Page
+    public partial class WebForm2 : System.Web.UI.Page
     {
         string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
             viewVehicle();
         }
-       
-       
+
+
 
         protected void Button2_Click(object sender, EventArgs e)
         {
@@ -33,10 +33,10 @@ namespace E_Farming
                 da.Fill(dt);
 
                 if (dt.Rows.Count >= 1)
-                
+
                 {
                     Response.Write("<script>alert('Couldn;t add same city');</script>");
-                    
+
                 }
                 else
                 {
@@ -137,11 +137,5 @@ namespace E_Farming
                 Response.Write("<script>alert('" + ex.Message + "');</script>");
             }
         }
-        /*void clear()
-{
-   u2.Text = "";
-   u3.Text = "";
-
-}*/
     }
 }

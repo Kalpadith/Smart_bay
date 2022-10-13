@@ -10,7 +10,7 @@ using System.Web.UI.WebControls;
 
 namespace E_Farming
 {
-    public partial class WebForm2 : System.Web.UI.Page
+    public partial class WebForm6 : System.Web.UI.Page
     {
         string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
@@ -97,9 +97,9 @@ namespace E_Farming
             {
                 using (SqlConnection con = new SqlConnection(strcon))
                 {
-                    
+
                     con.Open();
-                    
+
                     String query = "DELETE FROM deliveries_table WHERE delivery_id = @id";
                     SqlCommand sqlCmd = new SqlCommand(query, con);
 
@@ -118,7 +118,5 @@ namespace E_Farming
                 lblErrorMessage.Text = ex.Message;
             }
         }
-
-       
     }
 }

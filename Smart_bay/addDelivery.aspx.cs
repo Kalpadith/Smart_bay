@@ -7,7 +7,6 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
 namespace E_Farming
 {
     public partial class WebForm1 : System.Web.UI.Page
@@ -67,6 +66,5 @@ namespace E_Farming
                 Response.Write("<script>alert('" + ex.Message + "');</script>");
             }
         }
-
     }
 }
