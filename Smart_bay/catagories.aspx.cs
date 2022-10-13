@@ -13,7 +13,7 @@ namespace Smart_bay
         {
             try
             {
-                if (Session["role"].Equals("user"))
+                if (Session["role"].Equals("Customer"))
                 {
 
                     LinkButton3.Visible = true; // logout link button
@@ -27,43 +27,27 @@ namespace Smart_bay
 
                 }
 
-                else if (Session["role"].Equals("farmer"))
-
-                {
-                    LinkButton3.Visible = true; // logout link button
-                    LinkButton7.Visible = true; // hello user link button
-                    LinkButton7.Text = "Hello " + Session["farmer_id"].ToString();
-
-                }
-
             }
             catch (Exception ex)
             {
-
+               Response.Write("<script>alert('" + ex.Message + "');</script>");
             }
         }
 
         protected void LinkButton7_Click(object sender, EventArgs e)
         {
-            Response.Redirect("FarmHome.aspx");
+            Response.Redirect("customerProfile.aspx");
         }
-        /*protected void LinkButton3_Click(object sender, EventArgs e)
-		{
-			Response.Redirect("FarmHome.aspx");
-		}*/
-
+       
         protected void LinkButton3_Click(object sender, EventArgs e)
         {
             Session["username"] = "";
             Session["fullname"] = "";
             Session["role"] = "";
 
-
-
-
             LinkButton3.Visible = false; // logout link button
             LinkButton7.Visible = false; // hello user link button
-            Response.Redirect("FarmHome.aspx");
+            Response.Redirect("SmartHome.aspx");
 
 
         }

@@ -15,9 +15,6 @@ namespace Smart_bay
             {
                 if (Session["role"].Equals("Customer"))
                 {
-
-
-
                     LinkButton3.Visible = true; // logout link button
                     LinkButton6.Visible = true;
                     LinkButton8.Visible = true;
@@ -32,7 +29,7 @@ namespace Smart_bay
             }
             catch (Exception ex)
             {
-
+                Response.Write("<script>alert('" + ex.Message + "');</script>");
             }
         }
 
@@ -52,7 +49,7 @@ namespace Smart_bay
 
             LinkButton3.Visible = false; // logout link button
             LinkButton7.Visible = false; // hello user link button
-            Response.Redirect("ClientHome.aspx");
+            Response.Redirect("SmartHome.aspx");
 
 
         }

@@ -74,6 +74,7 @@
     <Content Include="bootstrap\js\popper.min.js" />
     <Content Include="catagories.aspx" />
     <Content Include="ClientHome.aspx" />
+    <Content Include="Clothing.aspx" />
     <Content Include="css\custom.css" />
     <Content Include="datatables\css\jquery.dataTables.min.css" />
     <Content Include="datatables\js\jquery.dataTables.min.js" />
@@ -105,7 +106,13 @@
     <Content Include="fontawesom\js\solid.min.js" />
     <Content Include="fontawesom\js\v4-shims.js" />
     <Content Include="fontawesom\js\v4-shims.min.js" />
+    <Content Include="item_Image\cz.jfif" />
+    <Content Include="item_Image\czc.jfif" />
+    <Content Include="item_Image\czczc.jfif" />
     <Content Include="item_Image\item.png" />
+    <Content Include="item_Image\shor-removebg-preview.png" />
+    <Content Include="item_Image\zczc.jfif" />
+    <Content Include="item_Image\zczcz.jfif" />
     <Content Include="photos\1.jpg" />
     <Content Include="photos\250b5b6e80d7eace5126b5b8cf1418af.jpg" />
     <Content Include="photos\Addcart.png" />
@@ -154,6 +161,7 @@
     <Content Include="photos\salary.png" />
     <Content Include="photos\salaryprofile.jpg" />
     <Content Include="photos\saved-icon-29.jpg" />
+    <Content Include="photos\Shcart.PNG" />
     <Content Include="photos\shoes.png" />
     <Content Include="photos\shoses.png" />
     <Content Include="photos\signincategory.png" />
@@ -168,6 +176,7 @@
     <Content Include="photos\visa.png" />
     <Content Include="photos\welcome member.jpg" />
     <Content Include="photos\WelcomeAdmin.png" />
+    <Content Include="ViewOneItem.aspx" />
     <Content Include="Web.config" />
     <Content Include="userlogin.aspx" />
     <Content Include="customermanagement.aspx" />
@@ -193,6 +202,13 @@
     </Compile>
     <Compile Include="ClientHome.aspx.designer.cs">
       <DependentUpon>ClientHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clothing.aspx.cs">
+      <DependentUpon>Clothing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clothing.aspx.designer.cs">
+      <DependentUpon>Clothing.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">
@@ -264,6 +280,13 @@
     </Compile>
     <Compile Include="adminlogin.aspx.designer.cs">
       <DependentUpon>adminlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewOneItem.aspx.cs">
+      <DependentUpon>ViewOneItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewOneItem.aspx.designer.cs">
+      <DependentUpon>ViewOneItem.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
