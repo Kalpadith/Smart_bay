@@ -72,6 +72,7 @@
     <Content Include="bootstrap\js\bootstrap.min.js" />
     <Content Include="bootstrap\js\jquery-3.3.1.slim.min.js" />
     <Content Include="bootstrap\js\popper.min.js" />
+    <Content Include="cart.aspx" />
     <Content Include="catagories.aspx" />
     <Content Include="ClientHome.aspx" />
     <Content Include="Clothing.aspx" />
@@ -189,6 +190,13 @@
     <Content Include="adminlogin.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cart.aspx.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cart.aspx.designer.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+    </Compile>
     <Compile Include="catagories.aspx.cs">
       <DependentUpon>catagories.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
