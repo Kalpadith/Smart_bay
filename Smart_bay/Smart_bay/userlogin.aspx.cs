@@ -42,6 +42,7 @@ namespace Smart_bay
                         Session["fullname"] = dr.GetValue(2).ToString() + dr.GetValue(3).ToString();
                         Session["role"] = dr.GetValue(0).ToString();
                         Session["farmer_id"] = dr.GetValue(11).ToString();
+
                         //Session["status"] = dr.GetValue(10).ToString();
                     }
                     Response.Redirect("SmartHome.aspx");
