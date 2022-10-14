@@ -135,6 +135,24 @@ svg {
     background-color: white;
 }
 
+.images6 {
+    margin-left: 60px;
+    margin-right: 4px;
+    margin-top: 8px;
+    width: 500px;
+    height: 220px;
+    background-color:gainsboro;
+}
+
+.images7 {
+    margin-left: 160px;
+    margin-right: -400px;
+    margin-top: 10px;
+    width: 1200px;
+    height: 290px;
+    background-color: white;
+}
+
 .texboxes {
     border-top-style: hidden;
     border-right-style: hidden;

@@ -1,9 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="ClientHome.aspx.cs" Inherits="Smart_bay.ClientHome" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Feedback.aspx.cs" Inherits="Smart_bay.Feedback" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <!-- Navbar -->
+     <!-- Navbar -->
        <nav class="navbar navbar-expand-lg navbar1">
           <!-- Container wrapper -->
          <div class="container-fluid">
@@ -64,65 +64,33 @@
           </div>
          </nav>
 
-     <br /><br />
-		
-    <div class="row">
-      
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                 <img src="photos/clothings.png" class="d-block" />
-               </div>
-               <div class="carousel-item">
-                 <img src="photos/shoses.png" class="d-block " />
-               </div>
-               <div class="carousel-item">
-                 <img src="photos/beauty.png" class="d-block " />
-               </div>
-               <div class="carousel-item">
-                 <img src="photos/electronicDevices.png" class="d-block " />
-               </div>
-              </div>
-                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                   <span class="visually-hidden">Previous</span>
-                 </button>
-                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                   <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-          
-        </div>
+     <center>
+     <img src="photos/comments.png"  width="400" height="200"/>
     
-    <br /><br /><br /><br />
+    <h2>Give Your Feedback Here...</h2><br>
 
-    <div class="container4">
-
-  <div class="card feed">
-   <img src="photos/viewItem.PNG "/>
-    <div class="card-body">
-      <center><i class="bi bi-handbag-fill"></i>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-handbag-fill" viewBox="0 0 16 16">
-            <path d="M8 1a2 2 0 0 0-2 2v2H5V3a3 3 0 1 1 6 0v2h-1V3a2 2 0 0 0-2-2zM5 5H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11v1.5a.5.5 0 0 1-1 0V5H6v1.5a.5.5 0 0 1-1 0V5z"/>
-          </svg>
-         <a href="catagories.aspx" class="btn btn-info">View Items</a></center>
+    <label>User ID:</label>
+    <br />
+    <div class="form-group">
+      <asp:TextBox CssClass="form-control" ID="UID" BorderColor="#00ff99" runat="server" placeholder="User ID" Width="400px" Height="50px"/>
     </div>
-  </div>
-  <div class="card feed">
-    <img src="photos/feed.PNG "/>
-    <div class="card-body">
-      <center><i class="bi bi-people-fill"></i>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
-             <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-             <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
-             <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
-          </svg>
-        <a href="Feedback.aspx" class="btn btn-info">Feedback</a></center>
-    </div>
-   </div>
-  </div>
-
+     
     <br /><br />
+    <label>Feedback:</label>
+    <br />
+    <div class="form-group">
+      <asp:TextBox CssClass="form-control" ID="Feed" BorderColor="#00ff99" runat="server" placeholder="If You have coplaints, please mention employee id" TextMode="MultiLine" Width="400px" Height="200px"/>
+      <br /></div>
+      <br />
+
+      <asp:Button ID="Button2" class="btn btn-primary" width="150" runat="server" Text="Save" OnClick="Button2_Click"/>
+         
+    </center>
+
+     <div class="row">
+      <div class="col-md-6">
+        <a href="customerProfile.aspx" class="links"><img width="30" class="imgs" src="photos/back-arr.png "/>Back to Home</a>
+      </div>
+     </div>  
 
 </asp:Content>

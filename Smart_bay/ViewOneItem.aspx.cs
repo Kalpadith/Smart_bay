@@ -59,6 +59,14 @@ namespace Smart_bay
                 TextBox9.Text = dt.Rows[0]["code"].ToString();
                 Image1.ImageUrl = dt.Rows[0]["img_link"].ToString();
 
+                SqlCommand cmd1 = new SqlCommand("SELECT * from reviews where code = '" + code + "';", con);
+                SqlDataAdapter da1 = new SqlDataAdapter(cmd1);
+                DataTable dt1 = new DataTable();
+                da1.Fill(dt1);
+
+                TextBox6.Text = dt1.Rows[0]["datetime"].ToString();
+                TextBox7.Text = dt1.Rows[0]["experienceRate"].ToString();
+
             }
         }
 
@@ -110,6 +118,12 @@ namespace Smart_bay
             {
                 Response.Write("<script>alert('" + ex.Message + "');</script>");
             }
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            String code = TextBox9.Text.Trim();
+            Response.Redirect(String.Format("~/Reviews.aspx?code={0}", code));
         }
 
         protected void LinkButton7_Click(object sender, EventArgs e)
