@@ -104,7 +104,7 @@ namespace Smart_bay
 
 		protected void LinkButton9_Click(object sender, EventArgs e)
 		{
-			Response.Redirect("cutomermanagement.aspx");
+			Response.Redirect("ReportofCustomer.aspx");
 		}
 
 		protected void LinkButton3_Click(object sender, EventArgs e)
