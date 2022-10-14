@@ -17,7 +17,7 @@ namespace E_Farming
         {
             try
             {
-                if (Session["role"].Equals("user"))
+                if (Session["role"].Equals("Customer"))
                 {
 
 
