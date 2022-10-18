@@ -39,23 +39,11 @@ namespace Smart_bay
                     {
                         Response.Write("<script>alert('Successful login');</script>");
                         Session["username"] = dr.GetValue(2).ToString();
-                        Session["username"] = dr.GetValue(11).ToString();
                         Session["fullname"] = dr.GetValue(2).ToString() + dr.GetValue(3).ToString();
                         Session["role"] = dr.GetValue(0).ToString();
-                        Session["farmer_id"] = dr.GetValue(11).ToString();
-
                         //Session["status"] = dr.GetValue(10).ToString();
                     }
-                    
-                    if (Session["role"].Equals("Customer"))
-                    {
-                        Response.Redirect("ClientHome.aspx");
-                    }
-                    else if (Session["role"].Equals("Seller"))
-                    {
-                        Response.Redirect("SellerHome.aspx");
-                    }
-                    
+                    Response.Redirect("SmartHome.aspx");
                 }
                 else
                 {

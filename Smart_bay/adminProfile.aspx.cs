@@ -67,10 +67,10 @@ namespace Smart_bay
 
 					if (!Page.IsPostBack)
 					{ */
-				getCustomerDetails();
-				/*}
+						getCustomerDetails();
+					/*}
 
-			}*/
+				}*/
 			}
 			catch (Exception ex)
 			{
@@ -171,7 +171,6 @@ namespace Smart_bay
 		//userdefine
 		void getCustomerDetails()
 		{
-			
 			try
 			{
 				SqlConnection con = new SqlConnection(strcon);
@@ -180,7 +179,6 @@ namespace Smart_bay
 					con.Open();
 				}
 				SqlCommand cmd = new SqlCommand("SELECT * from admin_Table_1 where username =  '" + Session["username"].ToString() + "';", con);
-
 				SqlDataAdapter da = new SqlDataAdapter(cmd);
 				DataTable dt = new DataTable();
 				da.Fill(dt);

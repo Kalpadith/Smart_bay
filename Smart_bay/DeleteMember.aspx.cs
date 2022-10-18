@@ -47,12 +47,12 @@ namespace E_Farming
                 Response.Write("<script>alert('Member Does not Exists');</script>");
             }
         }
-        /*    //Update go button
-            protected void LinkButton2_Click(object sender, EventArgs e)
-            {
-                getDepartmentByID();
-            }
-        */
+    /*    //Update go button
+        protected void LinkButton2_Click(object sender, EventArgs e)
+        {
+            getDepartmentByID();
+        }
+    */
         //User defined method
 
 
