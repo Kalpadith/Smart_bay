@@ -1,9 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="catagories.aspx.cs" Inherits="E_Farming.WebForm10" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="catagories.aspx.cs" Inherits="Smart_bay.catagories" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-     <!-- Navbar -->
+       <!-- Navbar -->
        <nav class="navbar navbar-expand-lg navbar1">
           <!-- Container wrapper -->
          <div class="container-fluid">

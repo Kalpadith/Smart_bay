@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
@@ -35,7 +36,7 @@ namespace E_Farming
             }
             catch (Exception ex)
             {
-                Response.Write("<script>alert('" + ex.Message + "');</script>");
+               Response.Write("<script>alert('" + ex.Message + "');</script>");
             }
 
             if (!this.IsPostBack)

@@ -3,10 +3,14 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-     <!-- Navbar -->
+    <!-- Navbar -->
        <nav class="navbar navbar-expand-lg navbar1">
           <!-- Container wrapper -->
          <div class="container-fluid">
+           <!-- Toggle button -->
+              <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <i class="fas fa-bars"></i>
+              </button>
 
              <!-- Collapsible wrapper -->
                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -40,11 +44,13 @@
                             <asp:LinkButton class="nav-link nav-link1" ID="LinkButton7" runat="server" Onclick="LinkButton7_Click" >Hello user</asp:LinkButton>
 
                         </li>
-                          <li class="nav-item active">
+                             
+                       <li class="nav-item active">
                         <asp:LinkButton class="nav-link nav-link1" ID="LinkButton3" runat="server" OnClick="LinkButton3_Click" Visible="FALSE">Logout</asp:LinkButton>
                      </li>
                    
                     </ul>		      
+           
                     <!-- Icon -->
                         <a href="cart.aspx" class="nav-link1">
                         <i class="bi bi-cart4"></i>

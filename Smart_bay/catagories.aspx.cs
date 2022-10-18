@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace E_Farming
+namespace Smart_bay
 {
-    public partial class WebForm10 : System.Web.UI.Page
+    public partial class catagories : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -30,7 +30,7 @@ namespace E_Farming
             }
             catch (Exception ex)
             {
-                Response.Write("<script>alert('" + ex.Message + "');</script>");
+               Response.Write("<script>alert('" + ex.Message + "');</script>");
             }
         }
 
@@ -38,7 +38,7 @@ namespace E_Farming
         {
             Response.Redirect("customerProfile.aspx");
         }
-
+       
         protected void LinkButton3_Click(object sender, EventArgs e)
         {
             Session["username"] = "";

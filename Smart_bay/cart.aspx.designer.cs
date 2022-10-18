@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace E_Farming
+namespace Smart_bay
 {
 
 
-    public partial class WebForm8
+    public partial class cart
     {
 
         /// <summary>

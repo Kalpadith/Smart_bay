@@ -15,10 +15,10 @@ namespace E_Farming
 {
     public partial class WebForm15 : System.Web.UI.Page
     {
-		string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
+        string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
 
-		protected void Page_Load(object sender, EventArgs e)
-		{
+        protected void Page_Load(object sender, EventArgs e)
+        {
 			try
 			{
 				if (Session["role"].Equals("Customer"))
@@ -63,6 +63,7 @@ namespace E_Farming
 				Response.Write("<script>alert('Session Expired Login Again');</script>");
 				Response.Redirect("userlogin.aspx");
 			}
+		}
 
 		}
 		protected void Button11_Click(object sender, EventArgs e)

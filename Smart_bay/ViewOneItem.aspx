@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-     <!-- Navbar -->
+    <!-- Navbar -->
        <nav class="navbar navbar-expand-lg navbar1">
           <!-- Container wrapper -->
          <div class="container-fluid">
@@ -174,4 +174,5 @@
     </div>
    </div>  
   <br /><br />
+
 </asp:Content>

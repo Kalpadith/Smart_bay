@@ -37,8 +37,9 @@ namespace E_Farming
             }
             catch (Exception ex)
             {
-                Response.Write("<script>alert('" + ex.Message + "');</script>");
+               Response.Write("<script>alert('" + ex.Message + "');</script>");
             }
+
         }
 
         protected void EGridView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -126,7 +127,7 @@ namespace E_Farming
         {
             Response.Redirect("customerProfile.aspx");
         }
-
+       
         protected void LinkButton3_Click(object sender, EventArgs e)
         {
             Session["username"] = "";

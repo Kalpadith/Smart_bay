@@ -8,9 +8,9 @@ using System.Web.UI.WebControls;
 namespace E_Farming
 {
     public partial class WebForm12 : System.Web.UI.Page
-    {
-        protected void Page_Load(object sender, EventArgs e)
-        {
+	{
+		protected void Page_Load(object sender, EventArgs e)
+		{
             try
             {
                 if (Session["role"].Equals("Customer"))
@@ -43,6 +43,9 @@ namespace E_Farming
             Session["username"] = "";
             Session["fullname"] = "";
             Session["role"] = "";
+
+
+
 
             LinkButton3.Visible = false; // logout link button
             LinkButton7.Visible = false; // hello user link button

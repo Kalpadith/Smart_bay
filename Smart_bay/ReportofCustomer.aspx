@@ -1,10 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="ReportofCustomer.aspx.cs" Inherits="E_Farming.WebForm18" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-        <script type="text/javascript">
+    <script type="text/javascript">
 		$(document).ready(function () {
 			$(".table").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
 		});
-        </script>
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -69,7 +69,7 @@
           </div>
          </nav>
 
-   <br><br>
+	<br><br>
     <center>
 	<div class="container6">
       <div class="row-md-100">
@@ -137,7 +137,7 @@
         </div>
       </div>  
    <br>
-		
+
 
 </asp:Content>
 

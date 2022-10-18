@@ -15,10 +15,10 @@ namespace E_Farming
 {
     public partial class WebForm16 : System.Web.UI.Page
     {
-		string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
+        string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
 
-		protected void Page_Load(object sender, EventArgs e)
-		{
+        protected void Page_Load(object sender, EventArgs e)
+        {
 
 			try
 			{
@@ -90,12 +90,12 @@ namespace E_Farming
 				TextBox6.Text = dt.Rows[0]["address"].ToString();
 				TextBox12.Text = Session["username"].ToString();
 
-				if (Session["username"].ToString().Equals(dt.Rows[0]["username"].ToString()))
+                if (Session["username"].ToString().Equals(dt.Rows[0]["username"].ToString()))
 				{
 					TextBox5.Text = "Active";
 				}
-				else
-				{
+                else
+                {
 					TextBox5.Text = "Inactive";
 				}
 

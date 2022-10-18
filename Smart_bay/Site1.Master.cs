@@ -177,7 +177,7 @@ namespace Smart_bay
             Session["username"] = "";
             Session["fullname"] = "";
             Session["role"] = "";
-            Session["status"] = "";
+            //Session["status"] = "";
 
             LinkButton1.Visible = true; // user login link button
             LinkButton2.Visible = true; // sign up link button
