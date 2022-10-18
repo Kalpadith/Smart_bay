@@ -18,11 +18,11 @@ namespace Smart_bay
                     LinkButton1.Visible = true; // user login link button
                     LinkButton2.Visible = true; // sign up link button
                     LinkButton3.Visible = false; // logout link button
-                    LinkButton7.Visible = false; // hello user link button
+                    LinkButton7.Visible = false; // hello user link https://localhost:44334/Site1.Master.csbutton
 
 
                     LinkButton4.Visible = false; // Delete member link button
-
+                    LinkButton5.Visible = false; // Sales Management link button
                     LinkButton6.Visible = true; // admin login link button
                     LinkButton11.Visible = false; // author management link button
                     LinkButton12.Visible = false; // publisher management link button
@@ -40,7 +40,7 @@ namespace Smart_bay
                     LinkButton7.Visible = true; // hello user link button
                     LinkButton7.Text = "Hello Admin";
 
-
+                    LinkButton5.Visible = true; // Sales Management link button
                     LinkButton4.Visible = true; // Delete member link button
 
                     LinkButton6.Visible = false; // admin login link button
@@ -60,6 +60,7 @@ namespace Smart_bay
 
 
                     LinkButton4.Visible = false; // Delete member link button
+                    LinkButton5.Visible = false; // Sales Management link button
 
                     LinkButton6.Visible = true; // admin login link button
                     LinkButton11.Visible = false; // author management link button
@@ -79,7 +80,7 @@ namespace Smart_bay
 
 
                     LinkButton4.Visible = false; // Delete member link button
-
+                    LinkButton5.Visible = false; // Sales Management link button
                     LinkButton6.Visible = true; // admin login link button
                     LinkButton11.Visible = false; // author management link button
                     LinkButton12.Visible = false; // publisher management link button
@@ -97,7 +98,7 @@ namespace Smart_bay
 
 
                     LinkButton4.Visible = false; // Delete member link button
-
+                    LinkButton5.Visible = false; // Sales Management link button
                     LinkButton6.Visible = true; // admin login link button
                     LinkButton11.Visible = false; // author management link button
                     LinkButton12.Visible = false; // publisher management link button
@@ -157,6 +158,11 @@ namespace Smart_bay
             Response.Redirect("UserRegForm.aspx");
         }
 
+        protected void LinkButton5_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("adminOrderManagement.aspx");
+        }
+
         //logout button
         protected void LinkButton3_Click(object sender, EventArgs e)
         {
@@ -184,7 +190,7 @@ namespace Smart_bay
         // view profile
         protected void LinkButton7_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("adminProfile.aspx");
         }
     }
 }
