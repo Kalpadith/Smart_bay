@@ -14,9 +14,6 @@ namespace E_Farming
 
         }
 
-        protected void LinkButtonL_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("SmartHome.aspx");
-        }
+       
     }
 }

@@ -44,7 +44,7 @@ namespace Smart_bay
                         Session["role"] = "Admin";
                         //Session["status"] = dr.GetValue(10).ToString();
                     }
-                    Response.Redirect("SmartHome.aspx");
+                    Response.Redirect("AdminManagement.aspx");
                 }
                 else
                 {

@@ -22,14 +22,14 @@ namespace Smart_bay
 
 
                     LinkButton4.Visible = false; // Delete member link button
-
+                    LinkButton5.Visible = false; // Sales Management link button
                     LinkButton6.Visible = true; // admin login link button
                     LinkButton11.Visible = false; // author management link button
                     LinkButton12.Visible = false; // publisher management link button
                     LinkButton8.Visible = false; // book inventory link button
                     LinkButton9.Visible = false; // book issuing link button
                     LinkButton10.Visible = false; // member management link button
-
+                    
                 }
                 else if (Session["role"].Equals("Admin"))
                 {
@@ -42,12 +42,13 @@ namespace Smart_bay
 
 
                     LinkButton4.Visible = true; // Delete member link button
-
+                    LinkButton5.Visible = true; // Sales Management link button
                     LinkButton6.Visible = false; // admin login link button
                     LinkButton11.Visible = false; // author management link button
                     LinkButton12.Visible = false; // publisher management link button
                     LinkButton8.Visible = false; // book inventory link button
                     LinkButton9.Visible = false; // book issuing link button
+                    
                 }
                 else if (Session["role"].Equals("Seller"))
                 {
@@ -60,12 +61,13 @@ namespace Smart_bay
 
 
                     LinkButton4.Visible = false; // Delete member link button
-
+                    LinkButton5.Visible = false; // Sales Management link button
                     LinkButton6.Visible = true; // admin login link button
                     LinkButton11.Visible = false; // author management link button
                     LinkButton12.Visible = false; // publisher management link button
                     LinkButton8.Visible = false; // book inventory link button
                     LinkButton9.Visible = false; // book issuing link button
+                    
                 }
                 else if (Session["role"].Equals("Customer"))
                 {
@@ -79,12 +81,13 @@ namespace Smart_bay
 
 
                     LinkButton4.Visible = false; // Delete member link button
-
+                    LinkButton5.Visible = false; // Sales Management link button
                     LinkButton6.Visible = true; // admin login link button
                     LinkButton11.Visible = false; // author management link button
                     LinkButton12.Visible = false; // publisher management link button
                     LinkButton8.Visible = false; // book inventory link button
                     LinkButton9.Visible = false; // book issuing link button
+                    
                 }
                 else if (Session["role"].Equals("Deliver"))
                 {
@@ -97,12 +100,13 @@ namespace Smart_bay
 
 
                     LinkButton4.Visible = false; // Delete member link button
-
+                    LinkButton5.Visible = false; // Sales Management link button
                     LinkButton6.Visible = true; // admin login link button
                     LinkButton11.Visible = false; // author management link button
                     LinkButton12.Visible = false; // publisher management link button
                     LinkButton8.Visible = false; // book inventory link button
                     LinkButton9.Visible = false; // book issuing link button
+                   
                 }
                 
             }
@@ -157,6 +161,13 @@ namespace Smart_bay
             Response.Redirect("UserRegForm.aspx");
         }
 
+
+        protected void LinkButton5_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("adminOrderManagement.aspx");
+        }
+
+
         //logout button
         protected void LinkButton3_Click(object sender, EventArgs e)
         {
@@ -172,19 +183,21 @@ namespace Smart_bay
             LinkButton7.Visible = false; // hello user link button
 
             LinkButton4.Visible = false; // Delete member link button
-
+            LinkButton5.Visible = false; // Sales Management link button
             LinkButton6.Visible = true; // admin login link button
             LinkButton11.Visible = false; // author management link button
             LinkButton12.Visible = false; // publisher management link button
             LinkButton8.Visible = false; // book inventory link button
             LinkButton9.Visible = false; // book issuing link button
             LinkButton10.Visible = false; // member management link button
+
+            Response.Redirect("SmartHome.aspx");
         }
 
         // view profile
         protected void LinkButton7_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("adminProfile.aspx");
         }
     }
 }

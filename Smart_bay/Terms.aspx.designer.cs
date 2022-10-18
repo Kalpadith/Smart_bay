@@ -13,14 +13,5 @@ namespace E_Farming
 
     public partial class WebForm35
     {
-
-        /// <summary>
-        /// LinkButtonL control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButtonL;
     }
 }

@@ -58,7 +58,7 @@ namespace E_Farming
 
             clear();
 
-            Response.Redirect("adminlogin.aspx");
+            Response.Redirect("userlogin.aspx");
 
         }
 

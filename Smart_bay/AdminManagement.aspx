@@ -30,19 +30,21 @@
                      <div class="col">
                        
                         <div class="form-group"><center>
-                           <a href="customermanagement.aspx" class="btn buttonA col-4"   role="button" aria-pressed="true">Customer Management</a><br>
+                           <a href="DeleteMember.aspx" class="btn buttonA col-4"   role="button" aria-pressed="true">Customer Management</a><br>
                             </center>
                         </div>
                         <div class="form-group"><center>
-                             <a href="usermanagement.aspx" class="btn buttonA col-4" width="250px"  role="button" aria-pressed="true">User Management</a><br><br><br><hr />
-                            </center>
-                        </div><br><br>
+                             <a href="addDelivery.aspx" class="btn buttonA col-4"   role="button" aria-pressed="true">Deliver Management</a><br><br><br><br><br>
+
+                        </center></div><br><br><br>
+                       
+                     </div>
                           
                        
                      </div>
                   </div>
             
-            <a href="FarmHome.aspx"><< Back to Home</a>
+            
        <br />
    </div>
 
