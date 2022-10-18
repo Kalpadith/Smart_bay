@@ -39,12 +39,12 @@ Username and password to log in each way are as follows.
 
 
 ## Seller:
-**Username -SEL14769 Password -123**
+**Username - SEL14769 Password -123**
 
 
 ## Customer:
-**Username -C1010 Password -C1010**
+**Username - C1010 Password -C1010**
 
 
 ## Admin:
-**Username -ADM0001 Password -ADM0001**
+**Username - ADM0001 Password -ADM0001**
