@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddSellerItem.aspx" />
     <Content Include="adminOrderManagement.aspx" />
     <Content Include="adminProfile.aspx" />
     <Content Include="bootstrap\css\bootstrap.min.css" />
@@ -106,7 +107,13 @@
     <Content Include="fontawesom\js\solid.min.js" />
     <Content Include="fontawesom\js\v4-shims.js" />
     <Content Include="fontawesom\js\v4-shims.min.js" />
+    <Content Include="item_Image\cz.jfif" />
+    <Content Include="item_Image\czc.jfif" />
+    <Content Include="item_Image\czczc.jfif" />
     <Content Include="item_Image\item.png" />
+    <Content Include="item_Image\shor-removebg-preview.png" />
+    <Content Include="item_Image\zczc.jfif" />
+    <Content Include="item_Image\zczcz.jfif" />
     <Content Include="photos\1.jpg" />
     <Content Include="photos\250b5b6e80d7eace5126b5b8cf1418af.jpg" />
     <Content Include="photos\Addcart.png" />
@@ -166,8 +173,31 @@
     <Content Include="SmartHome.aspx" />
     <Content Include="DeleteMember.aspx" />
     <Content Include="adminlogin.aspx" />
+    <Content Include="addDelivery.aspx" />
+    <Content Include="asignVehicle.aspx" />
+    <Content Include="CustomerPay.aspx" />
+    <Content Include="customerViewDelivery.aspx" />
+    <Content Include="viewCost.aspx" />
+    <Content Include="viewDelivery.aspx" />
+    <Content Include="addItem aspx.aspx" />
+    <Content Include="cart.aspx" />
+    <Content Include="catagories.aspx" />
+    <Content Include="ClientHome.aspx" />
+    <Content Include="Clothing.aspx" />
+    <Content Include="CustomerEdit.aspx" />
+    <Content Include="customerProfile.aspx" />
+    <Content Include="Feedback.aspx" />
+    <Content Include="ReportofCustomer.aspx" />
+    <Content Include="ViewOneItem.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddSellerItem.aspx.cs">
+      <DependentUpon>AddSellerItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddSellerItem.aspx.designer.cs">
+      <DependentUpon>AddSellerItem.aspx</DependentUpon>
+    </Compile>
     <Compile Include="adminOrderManagement.aspx.cs">
       <DependentUpon>adminOrderManagement.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -190,12 +220,47 @@
       <DependentUpon>conditions.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reviews.aspx.cs">
+      <DependentUpon>Reviews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reviews.aspx.designer.cs">
+      <DependentUpon>Reviews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SellerHome.aspx.cs">
+      <DependentUpon>SellerHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SellerHome.aspx.designer.cs">
+      <DependentUpon>SellerHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SellerProfileUpdate.aspx.cs">
+      <DependentUpon>SellerProfileUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SellerProfileUpdate.aspx.designer.cs">
+      <DependentUpon>SellerProfileUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SellerProfileView.aspx.cs">
+      <DependentUpon>SellerProfileView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SellerProfileView.aspx.designer.cs">
+      <DependentUpon>SellerProfileView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SoldItems.aspx.cs">
+      <DependentUpon>SoldItems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SoldItems.aspx.designer.cs">
+      <DependentUpon>SoldItems.aspx</DependentUpon>
     </Compile>
     <Compile Include="userlogin.aspx.cs">
       <DependentUpon>userlogin.aspx</DependentUpon>
@@ -260,9 +325,131 @@
     <Compile Include="adminlogin.aspx.designer.cs">
       <DependentUpon>adminlogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ViewSuppliedItemTable.aspx.cs">
+      <DependentUpon>ViewSuppliedItemTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSuppliedItemTable.aspx.designer.cs">
+      <DependentUpon>ViewSuppliedItemTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addDelivery.aspx.cs">
+      <DependentUpon>addDelivery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addDelivery.aspx.designer.cs">
+      <DependentUpon>addDelivery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asignVehicle.aspx.cs">
+      <DependentUpon>asignVehicle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asignVehicle.aspx.designer.cs">
+      <DependentUpon>asignVehicle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerPay.aspx.cs">
+      <DependentUpon>CustomerPay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerPay.aspx.designer.cs">
+      <DependentUpon>CustomerPay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customerViewDelivery.aspx.cs">
+      <DependentUpon>customerViewDelivery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customerViewDelivery.aspx.designer.cs">
+      <DependentUpon>customerViewDelivery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewCost.aspx.cs">
+      <DependentUpon>viewCost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewCost.aspx.designer.cs">
+      <DependentUpon>viewCost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewDelivery.aspx.cs">
+      <DependentUpon>viewDelivery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewDelivery.aspx.designer.cs">
+      <DependentUpon>viewDelivery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addItem aspx.aspx.cs">
+      <DependentUpon>addItem aspx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addItem aspx.aspx.designer.cs">
+      <DependentUpon>addItem aspx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cart.aspx.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cart.aspx.designer.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="catagories.aspx.cs">
+      <DependentUpon>catagories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="catagories.aspx.designer.cs">
+      <DependentUpon>catagories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientHome.aspx.cs">
+      <DependentUpon>ClientHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientHome.aspx.designer.cs">
+      <DependentUpon>ClientHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clothing.aspx.cs">
+      <DependentUpon>Clothing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clothing.aspx.designer.cs">
+      <DependentUpon>Clothing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerEdit.aspx.cs">
+      <DependentUpon>CustomerEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerEdit.aspx.designer.cs">
+      <DependentUpon>CustomerEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customerProfile.aspx.cs">
+      <DependentUpon>customerProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customerProfile.aspx.designer.cs">
+      <DependentUpon>customerProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportofCustomer.aspx.cs">
+      <DependentUpon>ReportofCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportofCustomer.aspx.designer.cs">
+      <DependentUpon>ReportofCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewOneItem.aspx.cs">
+      <DependentUpon>ViewOneItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewOneItem.aspx.designer.cs">
+      <DependentUpon>ViewOneItem.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Site1.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

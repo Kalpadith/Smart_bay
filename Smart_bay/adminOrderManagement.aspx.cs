@@ -22,7 +22,7 @@ namespace Smart_bay
         {
 
         }
-    
+
         /*   protected void Button2_Click(object sender, EventArgs e)
            {
                deleteCustomerByID();
