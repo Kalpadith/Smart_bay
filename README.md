@@ -39,7 +39,7 @@ Username and password to log in each way are as follows.
 
 
 ## Seller:
-**Username -F14769 Password -123**
+**Username -SEL14769 Password -123**
 
 
 ## Customer:
